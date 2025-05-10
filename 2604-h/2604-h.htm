@@ -7,6 +7,8 @@
 
     body { margin:5%; text-align:justify}
     P { text-indent: 1em; margin-top: .25em; margin-bottom: .25em; }
+    p.noindent { text-indent: 0em }
+    p.letteraddress {text-align: right; margin-top: 2em; }
     H1,H2,H3,H4,H5,H6 { text-align: center; margin-left: 15%; margin-right: 15%; }
     hr  { width: 50%; text-align: center;}
     .foot { margin-left: 20%; margin-right: 20%; text-align: justify; text-indent: -3em; font-size: 90%; }
@@ -21,7 +23,9 @@
     .pagenum   {display:inline; font-size: 70%; font-style:normal;
                margin: 0; padding: 0; position: absolute; right: 1%;
                text-align: right;}
-    pre        { font-style: italic; font-size: 90%; margin-left: 10%;}
+    .verse {
+        font-size: 90%;  text-indent: 0%;  margin-top: 1em;  margin-bottom: 1em; margin-left: 10%  }
+    .verse span.verseindent { margin-left: 2% }
 
 </style>
   </head>
@@ -806,12 +810,12 @@
       into the room so beautifully. Do you know&mdash;oh, of course, you despise
       music&mdash;but Anderson was playing Wagner, and he&rsquo;d just got to the part
       where they sing
-    </p>
-<pre>
-            &lsquo;Rheingold!
+     </p>
+    <p class="verse">
+            &lsquo;Rheingold!<br>
             Rheingold!&rsquo;
-</pre>
-    <p>
+     </p>
+    <p class="noindent">
       and the sun strikes into the waters, and the music, which up to then has
       so often been in E flat&mdash;&rdquo;
      </p>
@@ -3941,7 +3945,7 @@
     <p>
       Seven letters written in June:&mdash;
     </p>
-    <p>
+    <p class="letteraddress">
       Cambridge.
     </p>
     <p>
@@ -3973,8 +3977,9 @@
     <p>
       S.A.
     </p>
-    <p>
-      Shelthorpe, 9 Sawston Park Road, Sawston.
+    <p class="letteraddress">
+      Shelthorpe, 9 Sawston Park Road,<br>
+      Sawston.
     </p>
     <p>
       Dear Ansell,
@@ -3995,7 +4000,7 @@
     <p>
       R.E.
     </p>
-    <p>
+    <p class="letteraddress">
       Cambridge.
     </p>
     <p>
@@ -4014,8 +4019,9 @@
     <p>     
       (2) She is not truthful.
     </p>
-    <p>
-      Shelthorpe, 9 Sawston Park Road, Sawston.
+    <p class="letteraddress">
+      Shelthorpe, 9 Sawston Park Road,<br>
+      Sawston.
     </p>
     <p>
       My Dear Stewart,
@@ -4040,8 +4046,9 @@
     <p>
       R.E.
     </p>
-    <p>
-      Shelthorpe, 9 Sawston Park Road, Sawston.
+    <p class="letteraddress">
+      Shelthorpe, 9 Sawston Park Road,<br>
+      Sawston.
     </p>
     <p>
       Dear Mrs. Lewin,
@@ -4070,8 +4077,9 @@
     <p>
       Agnes Pembroke
     </p>
-    <p>
-      Shelthorpe, 9 Sawston Park Road Sawston.
+    <p class="letteraddress">
+      Shelthorpe, 9 Sawston Park Road,<br>
+      Sawston.
     </p>
     <p>
       Dear Mr. Silt,
@@ -4101,7 +4109,7 @@
     <p>
       Herbert Pembroke
     </p>
-    <p>
+    <p class="letteraddress">
       Cadover, Wilts.
     </p>
     <p>
@@ -5517,8 +5525,9 @@
     <p>
       &ldquo;Now you&rsquo;re asking.
     </p>
-    <p>
-      &ldquo;Old Em&rsquo;ly she limps, And as&mdash;&rdquo;
+    <p class="verse">
+      &ldquo;&lsquo;Old Em&rsquo;ly she limps,<br>
+      And as&mdash;&rsquo;&rdquo;
      </p>
     <p>
       &ldquo;I am so tired,&rdquo; said Rickie. Why should he stand it any longer?
@@ -5547,8 +5556,9 @@
     <p>
       &ldquo;Certainly. Thank you for your kind care of me.&rdquo;
      </p>
-    <p>
-      &ldquo;&lsquo;Old Em&rsquo;ly she limps, And as&mdash;&rsquo;&rdquo;
+    <p class="verse">
+      &ldquo;&lsquo;Old Em&rsquo;ly she limps,<br>
+      And as&mdash;&rsquo;&rdquo;
      </p>
     <p>
       Soon he was out of earshot. Soon they were lost to view. Soon they were
@@ -5573,14 +5583,15 @@
       sure whether he liked the soldier after all, nor whether he had been wise
       in showing him his compositions.
     </p>
-    <p>
-      &ldquo;&lsquo;Old Em&rsquo;ly she limps, And as I&mdash;&rsquo;&rdquo;
+    <p class="verse">
+      &ldquo;&lsquo;Old Em&rsquo;ly she limps,<br>
+      And as I&mdash;&rsquo;&rdquo;
      </p>
     <p>
       &ldquo;All right, Thomas. That&rsquo;ll do.&rdquo;
      </p>
-    <p>
-      &ldquo;Old Em&rsquo;ly&mdash;&lsquo;&rdquo;
+    <p class="verse">
+      &ldquo;&lsquo;Old Em&rsquo;ly&mdash;&rsquo;&rdquo;
      </p>
     <p>
       &ldquo;I wish you&rsquo;d dry up, like a good fellow. This is the lady&rsquo;s horse, you
@@ -5621,13 +5632,14 @@
       &ldquo;I call it a jolly rotten song,&rdquo; said Stephen crossly. &ldquo;I won&rsquo;t stand
       being got at.&rdquo;
      </p>
-<pre>
-&ldquo;P&rsquo;r&rsquo;aps y&rsquo;like therold song. Lishen.
-
-     &ldquo;&lsquo;Of all the gulls that arsshmart,
-     There&rsquo;s none line pretty&mdash;Em&rsquo;ly;
+     <p>
+       &ldquo;P&rsquo;r&rsquo;aps y&rsquo;like therold song. Lishen.
+      </p>
+     <p class="verse">
+     &ldquo;&lsquo;Of all the gulls that arsshmart,<br>
+     There&rsquo;s none line pretty&mdash;Em&rsquo;ly;<br>
      For she&rsquo;s the darling of merart&mdash;&rsquo;&rdquo;
- </pre>
+      </p>
     <p>
       &ldquo;Now, that&rsquo;s wrong.&rdquo; He rode up close to the singer.
     </p>
@@ -5667,8 +5679,9 @@
       &ldquo;Emily&mdash;femily!&rdquo; cried the soldier, with an inspiration that was not
       his when sober. &ldquo;My mother taught me femily.
     </p>
-    <p>
-      &ldquo;&lsquo;For she&rsquo;s the darling of merart, And she lives in my femily.&rsquo;&rdquo;
+    <p class="verse">
+      &ldquo;&lsquo;For she&rsquo;s the darling of merart,<br>
+      <span class="verseindent">And she lives in my femily.&rsquo;&rdquo;</span>
      </p>
     <p>
       &ldquo;Well, you&rsquo;d best be careful, Thomas, and your mother too.&rdquo;
@@ -5831,11 +5844,11 @@
       Colonel Ingersoll, or to marry Mrs. Julia P. Chunk! The Demeter turned
       towards him as he bathed, and in the cold water he sang&mdash;
     </p>
-<pre>
-     &ldquo;They aren&rsquo;t beautiful, they aren&rsquo;t modest;
-     I&rsquo;d just as soon follow an old stone goddess,&rdquo;
- </pre>
-    <p>
+    <p class="verse">
+     &ldquo;They aren&rsquo;t beautiful, they aren&rsquo;t modest;<br>
+     I&rsquo;d just as soon follow an old stone goddess,&rdquo;&mdash;
+     </p>
+    <p class="noindent">
       and sprang upward through the skylight on to the roof.
     </p>
     <p>      
@@ -6157,16 +6170,20 @@
       Shelley, and it opened at a passage that he had cherished greatly two
       years before, and marked as &ldquo;very good.&rdquo;
      </p>
-    <p>
-      &ldquo;I never was attached to that great sect Whose doctrine is that each one
-      should select Out of the world a mistress or a friend, And all the rest,
-      though fair and wise, commend To cold oblivion,&mdash;though it is the
-      code Of modern morals, and the beaten road Which those poor slaves with
-      weary footsteps tread Who travel to their home among the dead By the broad
-      highway of the world,&mdash;and so With one sad friend, perhaps a jealous
-      foe, The dreariest and the longest journey go.&rdquo;
+    <p class="verse">
+      &ldquo;I never was attached to that great sect<br>
+      Whose doctrine is that each one should select<br>
+      Out of the world a mistress or a friend<br>
+      And all the rest, though fair and wise, commend<br>
+      To cold oblivion,&mdash;though it is the code<br>
+      Of modern morals, and the beaten road<br>
+      Which those poor slaves with weary footsteps tread<br> 
+      Who travel to their home among the dead<br>
+      By the broad highway of the world,&mdash;and so<br>
+      With one sad friend, perhaps a jealous foe,<br>
+      The dreariest and the longest journey go.&rdquo;<br>
      </p>
-    <p>
+    <p class="noindent">
       It was &ldquo;very good&rdquo;&mdash;fine poetry, and, in a sense, true. Yet he was
       surprised that he had ever selected it so vehemently. This afternoon it
       seemed a little inhuman. Half a mile off two lovers were keeping company
@@ -7461,12 +7478,13 @@
       imperial poets. He showed how patriotism had broadened since the days of
       Shakespeare, who, for all his genius, could only write of his country as&mdash;
     </p>
-    <p>
-      &ldquo;This fortress built by nature for herself Against infection and the hand
-      of war, This hazy breed of men, this little world, This precious stone set
-      in the silver sea.&rdquo;
+    <p class="verse">
+      &ldquo;This fortress built by nature for herself<br>
+      Against infection and the hand of war,<br>
+      This hazy breed of men, this little world,<br>
+      This precious stone set  in the silver sea.&rdquo;
     </p>
-    <p>
+    <p class="noindent">
       And it seemed that only a short ladder lay between the preparation room
       and the Anglo-Saxon hegemony of the globe. Then he paused, and in the
       silence came &ldquo;sob, sob, sob,&rdquo; from a little boy, who was regretting a
@@ -7478,11 +7496,10 @@
       matter for taste, and it was Mr. Pembroke (and he only because he had
       the music) who gave the right intonation to
      </p>
- <pre>
-     &ldquo;Perish each laggard!
-     Let it not be said
+    <p class="verse">
+     &ldquo;Perish each laggard! Let it not be said<br>
      That Sawston such within her walls hath bred.&rdquo;
- </pre>
+      </p>
     <p>
       &ldquo;Come, come,&rdquo; he said pleasantly, as they ended with harmonies in the
       style of Richard Strauss. &ldquo;This will never do. We must grapple with the
@@ -7576,8 +7593,9 @@
       required to provide it with an atmosphere. The scheme of work was already
       mapped out, and he started gaily upon familiar words&mdash;
     </p>
-    <p>
-      &ldquo;Pan, ovium custos, tua si tibi Maenala curae Adsis, O Tegaee, favens.&rdquo;
+    <p class="verse">
+      &ldquo;Pan, ovium custos, tua si tibi Maenala curae<br>
+      Adsis, O Tegaee, favens.&rdquo;
      </p>
     <p>
       &ldquo;Do you think that beautiful?&rdquo; he asked, and received the honest answer,
@@ -9896,10 +9914,10 @@
       they had quarrelled, and the young man was wondering why he had not
       guarded his chin properly. In the distance a hymn swung off&mdash;
     </p>
-    <p>
+    <p class="verse">
       &ldquo;Fight the good. Fight with. All thy. Might.&rdquo;
      </p>
-    <p>
+    <p class="noindent">
       They would be across from the chapel soon.
     </p>
     <p>
@@ -10311,7 +10329,10 @@
       parlour-maid into the house smoking. As he entered the dinner-bell rang,
       and there was the sound of rushing feet, which died away into shuffling
       and silence. Through the window of the boys&rsquo; dining-hall came the
-      colourless voice of Rickie&mdash;&ldquo;&lsquo;Benedictus benedicat.&rsquo;&rdquo;
+      colourless voice of Rickie&mdash;
+     </p>
+    <p class="verse">      
+      &ldquo;&lsquo;Benedictus benedicat.&rsquo;&rdquo;
      </p>
     <p>
       Ansell prepared himself to witness the second act of the drama; forgetting
@@ -10662,7 +10683,7 @@
       It was Rickie, not Ansell, who was carried from the hall, and it was
       Herbert who pronounced the blessing&mdash;
     </p>
-    <p>
+    <p class="verse">
       &ldquo;Benedicto benedicatur.&rdquo;
      </p>
     <p>
@@ -11005,11 +11026,11 @@
       love for each other, was not dependent on detail: it grew not from the
       nerves but from the soul.
     </p>
-    <p>
-      &ldquo;I believe a leaf of grass is no less than the journey work of the stars,
-      And the pismire is equally perfect, and a grain of sand, and the egg of
-      the wren, And the tree toad is a chef-d&rsquo;oeuvre for the highest, And the
-      running blackberry would adorn the parlours of heaven.&rdquo;
+    <p class="verse">
+      &ldquo;I believe a leaf of grass is no less than the journey work of the stars,<br>
+      And the pismire is equally perfect, and a grain of sand, and the egg of the wren,<br>
+      And the tree toad is a chef-d&rsquo;oeuvre for the highest,<br>
+      And the running blackberry would adorn the parlours of heaven.&rdquo;
      </p>
     <p>
       They had never read these lines, and would have thought them nonsense if
